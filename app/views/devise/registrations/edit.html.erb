@@ -16,7 +16,7 @@
   <div class="field form-group">
     <% f.label :password %><br />
     <%= f.password_field :password, autocomplete: "new-password", class:"form-control",
-    placeholder:"Password" %>
+    placeholder:"New Password" %>
     <% if @minimum_password_length %>
     <% end %>
   </div>
@@ -24,7 +24,7 @@
   <div class="field form-group">
     <% f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control",
-    placeholder:"Password" %>
+    placeholder:"Confirm Password" %>
   </div>
 
   <div class="field form-group">

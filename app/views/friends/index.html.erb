@@ -2,8 +2,8 @@
   <table class="table table-striped table-bordered table-hover">
     <thead class="table-dark">
       <tr>
-        <th>Store</th>
         <th>Game</th>
+        <th>Store</th>
         <th>Price</th>
         <th>URL</th>
         <th>Console/Platform</th>
@@ -15,8 +15,8 @@
       <% @friends.each do |friend| %>
         <% if friend.user == current_user %>
         <tr>
-          <td><%= friend.first_name %></td>
           <td><%= link_to friend.last_name, friend %></td>
+          <td><%= friend.first_name %></td>
           <td><%= friend.email %></td>
           <td><%= friend.phone %></td>
           <td><%= friend.twitter %></td>
